@@ -10,7 +10,8 @@ public class Car {
     double currentPrice = 3000;
     int mileagePassed = 50000;
     
-    public Car(){}
+    public Car(){
+    }
     
     public Car(int maxSpeed, int minSpeed, double weight, boolean isTheCarOn, String license, char condition, double currentPrice  
     
@@ -30,5 +31,7 @@ public class Car {
         
         
     }
+    
+    
     
 }
