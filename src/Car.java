@@ -15,12 +15,16 @@ public class Car {
     int currentFuel;
     int Consumption;
     int distance;
+    int currentPassengers;
+    int maxPassengers;
 
     public Car() {
 
         this.model = "default";
         this.currentFuel = 0;
         this.maxFuel = 100;
+        this.currentPassengers = 1;
+        this.maxPassengers = 5;
 
     }
 
@@ -44,6 +48,7 @@ public class Car {
 
         System.out.println("Trenutno gorivo: " + this.currentFuel);
         System.out.println("Predjena kilometraza: " + this.mileagePassed);
+        System.out.println("Trenutni broj putnika : " + this.currentPassengers + ",maksimalno: " + this.maxPassengers);
         System.out.println();
 
     }
@@ -92,4 +97,25 @@ public class Car {
         }
 
     }
+
+    public void getIn() {
+        if (this.currentPassengers < this.maxPassengers) {
+
+            this.currentPassengers = this.currentPassengers + 1;
+            System.out.println("Neko je usao u auto");
+
+        } else {
+            System.out.println("U automobilu nema mesta");
+        }
+    }
+
+    public void getOut() {
+        if (this.currentPassengers >= 1) {
+            this.currentPassengers = this.currentPassengers - 1;
+            System.out.println("Neko je izasao iz automobila");
+        } else {
+            System.out.println("Automobil je prazan");
+        }
+    }
+
 }
