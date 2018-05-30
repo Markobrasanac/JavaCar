@@ -24,7 +24,7 @@ public class Main {
         audi.printMainAttributes();
         audi.travel(3);
         audi.printMainAttributes();
-        
+
         audi.getIn();
         audi.printMainAttributes();
         audi.getIn();
@@ -37,7 +37,7 @@ public class Main {
         audi.printMainAttributes();
         audi.getIn();
         audi.printMainAttributes();
-        
+
         audi.getOut();
         audi.printMainAttributes();
         audi.getOut();
@@ -52,7 +52,15 @@ public class Main {
         audi.printMainAttributes();
         audi.getOut();
         audi.printMainAttributes();
-        
+
+        audi.getIn(2);
+        audi.getIn(2);
+        audi.getIn(1);
+        audi.getIn(2);
+
+        audi.getOut(2);
+        audi.getOut(2);
+        audi.getOut(1);
     }
 
 }
