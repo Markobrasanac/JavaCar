@@ -128,7 +128,7 @@ public class Car {
     }
 
     public void getOut(int numberOfPassengers) {
-        if (this.currentPassengers - numberOfPassengers > 0) {
+        if (this.currentPassengers - numberOfPassengers >= 0) {
             this.currentPassengers = this.currentPassengers - numberOfPassengers;
             System.out.println("Broj putnika u autu je: " + this.currentPassengers);
         } else {
