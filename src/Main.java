@@ -1,5 +1,8 @@
 
 import loops.Loops;
+import person.Person;
+import person.Student;
+import person.Teacher;
 
 public class Main {
 
@@ -50,8 +53,8 @@ public class Main {
 //        audi.printMainAttributes();
 //        audi.getOut();
 //        audi.printMainAttributes();
-//        audi.getOut();
-//        audi.printMainAttributes();
+////        audi.getOut();
+////        audi.printMainAttributes();
 //        audi.getOut();
 //        audi.printMainAttributes();
 //
@@ -64,8 +67,29 @@ public class Main {
 //        audi.getOut(2);
 //        audi.getOut(1);
 //       Loops testLoop = new Loops();
-        Loops.testWhileLoop();
-        Loops.testDoWhileLoop();
-        Loops.testForLoop();
+//        Loops.testWhileLoop();
+//        Loops.testDoWhileLoop();
+//        Loops.testForLoop();
+        Person p1 = new Person();
+        p1.showData();
+
+        p1.setName("Marko");
+        p1.setSurname("Markovic");
+        p1.setJmbg("544545599");
+
+        Person p2 = new Person("Petar", "Petrovic", "1226555456");
+        p2.showData();
+
+        Student studentJovan = new Student("Jovan", "Jovanovic", "6465656");
+        studentJovan.showData();
+        
+        Student studentMarija = new Student ("Marija","Maricic","3545555","oas-123",2);
+        studentMarija.showData();
+  
+        
+        
+        Teacher teacherMilomir = new Teacher ("Milomir", "Dragovic","666464", "QA",4);
+        teacherMilomir.showData();
     }
+
 }
